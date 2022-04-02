@@ -1,6 +1,7 @@
 import React from 'react'
 import {Nav, Logo,Icon, Search, Text, Left, Right, Bell, Profile, MobileIcon} from './NavElements'
 import {FaBars} from 'react-icons/fa'
+import {FaBell} from 'react-icons/fa'
 
 const Navbar = ({toggle}) => {
   return (
@@ -9,11 +10,11 @@ const Navbar = ({toggle}) => {
       <Logo></Logo>
       <Icon>
       <Search />
-      <Text>Search a course</Text>
+      <Text><input type="text" placeholder='Search a course'/></Text>
       </Icon>
       </Left>
       <Right>
-      <Bell/>
+      <Bell to=''><FaBell/></Bell>
         <Profile></Profile>
         <MobileIcon onClick={toggle}>
                     

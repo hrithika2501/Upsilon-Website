@@ -19,7 +19,7 @@ export const Nav = styled.nav`
 export const Left = styled.div`
 width:32.5% ;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 
 
@@ -47,7 +47,7 @@ export const Logo = styled.div`
 width: 80px ;
 height:80px ;
 margin-top:2.5em ;
-
+margin-left:1.2em ;
 background: url(${Logos}) no-repeat;
 background-size: cover;
 background-position: center;
@@ -55,7 +55,7 @@ background-position: center;
 
 export const Icon = styled.div`
 margin-top:2em ;
-
+/* margin-left: 2em; */
 display:flex ;
 justify-content: space-between ;
 align-items: flex-end ;
@@ -73,12 +73,22 @@ background-position: center;
 `;
 
 export const Text= styled.p`
-color: #CCCCCC ;
-font-family: 'Inter' ;
+/* color: #CCCCCC ;
+font-family: 'Inter' ; */
 margin-left:0.5em ;
-padding-right:5em;
+padding-right:3em;
 
 border-bottom: 1px solid #BCBCBC ;
+
+input {
+    color: #CCCCCC ;
+font-family: 'Inter' ;
+border: 0px solid ;
+background-color: transparent ;
+}
+input:focus{
+    outline: none ;
+}
 `;
 
 export const Right = styled.div`
@@ -107,9 +117,12 @@ export const Bell=styled.div`
 width: 15px ;
 height: 20px;
 margin-bottom:.75em ;
-background: url(${Bel}) no-repeat;
-background-size: cover;
-background-position: center;
+color: #fff;
+&:hover{
+    color: blue;
+}
+
+
 `;
 
 export const Profile= styled.div`
